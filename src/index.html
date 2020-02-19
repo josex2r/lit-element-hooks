@@ -5,11 +5,29 @@
 	<metacharset="UTF-8">
 	<metaname="viewport"content="width=device-width, initial-scale=1.0">
 	<metahttp-equiv="X-UA-Compatible"content="ie=edge">
-	    <title>My Application</title>
-	    <script src="webcomponents/webcomponents-loader.js"></script>
+	<title>My Application</title>
+	<script src="webcomponents/webcomponents-loader.js"></script>
     </head>
 
     <body>
-	<my-app></my-app>
+	<my-app counter="1"></my-app>
+	<password-checker password="foo"></password-checker>
+	<password-checker password="dsD3443"></password-checker>
+	<password-checker-slot password=""></password-checker-slot>
+	<password-checker-slot password="">
+	    <p slot="empty">No password :(</p>
+	    <p slot="valid">Valid!</p>
+	    <p slot="invalid">Invalid!</p>
+	</password-checker-slot>
+	<password-checker-slot password="foo">
+	    <p slot="empty">No password :(</p>
+	    <p slot="valid">Valid!</p>
+	    <p slot="invalid">Invalid!</p>
+	</password-checker-slot>
+	<password-checker-slot password="dsD3443">
+	    <p slot="empty">No password :(</p>
+	    <p slot="valid">Valid!</p>
+	    <p slot="invalid">Invalid!</p>
+	</password-checker-slot>
     </body>
 </html>
