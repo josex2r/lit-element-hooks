@@ -10,10 +10,17 @@
     </head>
 
     <body>
+	<h2>Haunted hooks:</h2>
 	<my-app counter="1"></my-app>
+
+	<h2>Sharing state between input and components:</h2>
+	<app-password-checker></app-password-checker>
+
+	<h2>Password validator:</h2>
 	<password-checker password="foo"></password-checker>
 	<password-checker password="dsD3443"></password-checker>
-	<password-checker-slot password=""></password-checker-slot>
+
+	<h2>Password validator using slots:</h2>
 	<password-checker-slot password="">
 	    <p slot="empty">No password :(</p>
 	    <p slot="valid">Valid!</p>
@@ -29,5 +36,8 @@
 	    <p slot="valid">Valid!</p>
 	    <p slot="invalid">Invalid!</p>
 	</password-checker-slot>
+
+	<h2>Password validator using default slots:</h2>
+	<password-checker-slot password=""></password-checker-slot>
     </body>
 </html>

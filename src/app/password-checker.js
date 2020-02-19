@@ -1,6 +1,6 @@
 import { css, html } from 'lit-element';
 import { component } from 'haunted-lit-element';
-import { useState, useMemo } from 'haunted';
+import { useMemo } from 'haunted';
 
 const isValid = (password) => /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}/.test(password);
 
