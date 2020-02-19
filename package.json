@@ -1,0 +1,22 @@
+{
+    "name": "example-2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack --env.mode production",
+        "start": "webpack-dev-server --env.mode development"
+    },
+    "dependencies": {
+        "@webcomponents/webcomponentsjs": "^2.1.3",
+        "haunted-lit-element": "^0.1.3",
+        "lit-element": "^2.2.1"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^5.1.1",
+        "html-webpack-plugin": "^3.2.0",
+        "webpack": "^4.41.6",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}
